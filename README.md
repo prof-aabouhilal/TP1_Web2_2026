@@ -26,7 +26,6 @@ tp-javascript/
 ├── exercice5.html
 ├── exercice6.html
 ├── exercice7.html
-└── exercice8.html
 ```
 
 ---
@@ -53,7 +52,7 @@ Copiez ce fichier de départ pour chaque exercice :
 </html>
 ```
 
-> **Rappel :** Ouvrez la **console du navigateur** (`F12` → onglet *Console*) pour voir les messages `console.log`. C'est votre meilleur outil de débogage !
+**Rappel :** Ouvrez la **console du navigateur** (`F12` → onglet *Console*) pour voir les messages `console.log`. C'est votre meilleur outil de débogage !
 
 ---
 
@@ -61,7 +60,7 @@ Copiez ce fichier de départ pour chaque exercice :
 
 ---
 
-### Exercice 1 — Hello, console ! *(10 min)*
+### Exercice 1 — Hello, console ! 
 
 **Objectif :** Intégrer du JavaScript dans une page HTML et utiliser `console.log`.
 
@@ -81,11 +80,11 @@ Bonjour, monde !
 35
 ```
 
-> 🔍 **À retenir :** `console.log()` accepte plusieurs arguments séparés par des virgules : `console.log("résultat :", 10)`.
+**À retenir :** `console.log()` accepte plusieurs arguments séparés par des virgules : `console.log("résultat :", 10)`.
 
 ---
 
-### Exercice 2 — Mes premières variables *(15 min)*
+### Exercice 2 — 
 
 **Objectif :** Déclarer et initialiser des variables avec `let`.
 
@@ -119,7 +118,7 @@ Nouvel âge : 21
 
 ---
 
-### Exercice 3 — Constantes et TVA *(15 min)*
+### Exercice 3 —
 
 **Objectif :** Utiliser `const` pour les valeurs qui ne doivent pas changer.
 
@@ -140,7 +139,7 @@ Créez `exercice3.html`. Vous êtes en train de développer une mini-calculatric
 
 ---
 
-### Exercice 4 — Interaction avec l'utilisateur *(20 min)*
+### Exercice 4 —
 
 **Objectif :** Utiliser `window.prompt`, `window.alert` et `window.confirm`.
 
@@ -160,7 +159,7 @@ Créez `exercice4.html`. Ce script doit interagir avec l'utilisateur au chargeme
 
 ---
 
-### Exercice 5 — Affichage dans la page HTML *(20 min)*
+### Exercice 5 
 
 **Objectif :** Modifier le contenu d'éléments HTML avec `innerHTML`.
 
@@ -190,7 +189,7 @@ Créez `exercice5.html`. Construisez une fiche de présentation dynamique.
 
 ---
 
-### Exercice 6 — Nommage et débogage *(15 min)*
+### Exercice 6 — Nommage et débogage
 
 **Objectif :** Identifier et corriger des erreurs de nommage de variables.
 
@@ -218,7 +217,7 @@ Une fois les erreurs corrigées, appliquez les **conventions camelCase** à tout
 
 ---
 
-### Exercice 7 — Calculatrice de cercle *(15 min)*
+### Exercice 7 
 
 **Objectif :** Combiner variables, constantes, calculs et affichage HTML.
 
@@ -246,45 +245,6 @@ Créez `exercice7.html`. Vous allez créer un mini-calculateur de propriétés d
    - `"Surface : [valeur arrondie à 2 décimales] cm²"`
 
 > Pour arrondir : `(3.14159).toFixed(2)` renvoie `"3.14"` (c'est une chaîne !)
-
----
-
-### Exercice 8 — Mini-CV interactif *(10 min)*
-
-**Objectif :** Créer une page complète avec interaction utilisateur et affichage dynamique.
-
-Créez `exercice8.html`. Ce dernier exercice combine tout ce que vous avez vu.
-
-**Structure HTML :**
-
-```html
-<h1 id="titre">Mon CV</h1>
-<section id="identite"></section>
-<section id="competences"></section>
-<section id="message"></section>
-```
-
-**Dans le `<script>` :**
-
-1. Demandez successivement via `prompt` : prénom, nom, âge, ville, et une compétence.
-2. Déclarez une constante `ANNEE_COURANTE = 2025`.
-3. Calculez l'année de naissance.
-4. Mettez à jour le `<h1>` avec `"CV de [prénom] [nom]"`.
-5. Remplissez la section `#identite` avec un mini-tableau HTML généré en JavaScript :
-
-```javascript
-document.getElementById("identite").innerHTML = `
-  <h2>Identité</h2>
-  <p><strong>Nom complet :</strong> ${prenom} ${nom}</p>
-  <p><strong>Âge :</strong> ${age} ans</p>
-  <p><strong>Née(e) en :</strong> ${anneeNaissance}</p>
-  <p><strong>Ville :</strong> ${ville}</p>
-`;
-```
-
-6. Remplissez `#competences` avec la compétence saisie.
-7. Dans `#message`, affichez via `confirm` : si l'utilisateur valide, affichez `"Merci d'avoir rempli votre CV !"`, sinon `"CV non finalisé."`.
-
 
 ## Ressources utiles
 
